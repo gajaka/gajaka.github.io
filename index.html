@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dragan Stosic — Formal Verification and AI Systems</title>
+  <meta name="description" content="Research and engineering background of Dragan Stosic, MSc: formal verification with Lean, PVS and CBMC, production AI systems, selected projects and CV.">
+  <link rel="canonical" href="https://gajaka.github.io/">
+  <meta property="og:url" content="https://gajaka.github.io/">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Dragan Stosic — Formal Verification and AI Systems">
+  <meta property="og:description" content="Research, software projects, experience and CV.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="research.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header>
+      <h1>Dragan Stosic</h1>
+      <p class="role">Software engineer · Formal verification and AI systems</p>
+      <p class="location">Belgrade, Serbia · Available for remote work</p>
+      <p class="contact"><a href="mailto:dragan.stosic@gmail.com">dragan.stosic@gmail.com</a><span aria-hidden="true">·</span><a href="https://github.com/gajaka">GitHub</a><span aria-hidden="true">·</span><a href="assets/Dragan-Stosic-CV.pdf">CV (PDF)</a></p>
+      <nav aria-label="Page sections"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#publications">Research outputs</a><a href="#education">Education</a></nav>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-label="Background">
+        <p>I work on formal verification, developer tools and production AI systems. My recent work includes formal libraries in Lean 4 and PVS, verification of C code with CBMC, and deterministic compilation and validated editing of LLM-generated workflows.</p>
+        <p>I have contributed to NASA’s PVS Library and the DARPA-funded BESSPIN voting-system demonstrator. Earlier work includes formal methods research at University College Dublin and engineering at IBM Ireland.</p>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Selected projects</h2>
+
+        <article>
+          <h3>Formal certification, refinement and repair <span class="year">2024–2026</span></h3>
+          <p>Lean 4 and PVS developments on certificate-preserving transitions, parametric certification, repair and progress obligations. Includes the General Lovász Local Lemma and Moser–Tardos constructive repair.</p>
+          <p>The Lean 4.35.0 library contains <strong>1,824 explicit theorems and lemmas across 191 source modules</strong>, with no project-owned Lean axioms or <code>sorry</code> dependencies. PVS counterparts have been independently replayed. Builds and axiom-dependency audits are documented in the repositories.</p>
+          <p>Results apply to the formal models under their stated assumptions; preservation and repair obligations are explicit.</p>
+          <p class="links"><a href="https://github.com/gajaka/ppg-lean">Lean source and checks</a> · <a href="https://github.com/gajaka/luces-pvs-theories">PVS source and proof replay</a></p>
+        </article>
+
+        <article>
+          <h3>C buffer publication: Lean and CBMC <span class="year">2026</span></h3>
+          <p>A verification case study of a sequential, 64-byte buffer API. Eight contracts are checked with CBMC, supported by seven negative controls. Lean proofs cover its functional model and certificate-preserving controller refinement.</p>
+          <p>C verification is scoped to the declared C/library model. Source and reproducible reports are available on request.</p>
+          <p class="links"><a href="mailto:dragan.stosic@gmail.com?subject=C%20buffer%20verification%20case%20study">Request the case study</a></p>
+        </article>
+
+        <article>
+          <h3>Open-source contributions</h3>
+          <ul>
+            <li><strong>NASA PVS Library</strong> (external contributor, 2013): refinement-relation definitions and lemmas in <a href="https://github.com/nasa/pvslib/blob/master/sets_aux/rr_rel.pvs"><code>sets_aux/rr_rel.pvs</code></a>. <a href="https://shemesh.larc.nasa.gov/fm/pvs/PVS-library/library.html">Contributor list</a>.</li>
+            <li><strong>BESSPIN Voting System Demonstrator</strong> (with Galois, 2019–2020): formal verification and hardware/software attack-surface analysis on the DARPA-funded election-security project. <a href="https://github.com/GaloisInc/BESSPIN-Voting-System-Demonstrator-2019#credits">Project and credits</a>.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+        <article>
+          <h3>Rival (ex-SilkRoad Technology) <span class="year">2021–2026</span></h3>
+          <p class="position">Senior AI Engineer · Remote, US company</p>
+          <ul>
+            <li>Workflow generation from natural-language requests and Excel, with modular LLM routing and deterministic topology compilation.</li>
+            <li>A keyed-delta editor with identity mapping, dependency validation, version checks, deduplication and structural undo/rollback.</li>
+            <li>pytest and Hypothesis checks for identity preservation, round trips, determinism, dependencies and undo/replay.</li>
+            <li>RAG over 3,400+ documents using Bedrock and pgvector/HNSW, with AI security testing, moderation and PII anonymization.</li>
+            <li>A 600+ notebook Databricks platform, Delta Lake pipelines and resumable OpenSearch publishing.</li>
+            <li>XGBoost response-likelihood models and attention-based Keras BiLSTM career-trajectory models across eight job families.</li>
+          </ul>
+        </article>
+        <article>
+          <h3>IBM Ireland <span class="year">2011–2019</span></h3>
+          <p class="position">Senior Engineer · Dublin</p>
+          <p>Watson IoT and industrial analytics: Spark ML pipelines, Random Forests and Logistic Regression over Hadoop/Hive, with Flask APIs.</p>
+        </article>
+        <article>
+          <h3>University College Dublin <span class="year">2009–2011</span></h3>
+          <p class="position">Researcher · Dublin</p>
+          <p>Formal specification with JML and PVS, VHDL hardware verification and the SenseTile sensor-platform project.</p>
+        </article>
+        <p><strong>Earlier:</strong> ProCredit Bank; FinSoft London (European Central Bank portal); Institute Mihailo Pupin. Banking software, enterprise Java, real-time embedded systems, DSP and VHDL.</p>
+      </section>
+
+      <section id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Selected research outputs</h2>
+        <ol class="publications">
+          <li><a href="https://doi.org/10.5281/zenodo.20094759">Empirical Information Geometry on an Embedded Adaptive Lighting System: Multi-Chart Manifold Transitions Under Signal Collapse.</a> Zenodo research report, 2026.</li>
+          <li><a href="https://doi.org/10.5281/zenodo.20389804">Excitation-Dependent Observability Geometry on an Embedded Adaptive Lighting Manifold.</a> Zenodo preprint, 2026.</li>
+          <li><a href="https://doi.org/10.5281/zenodo.21956336">Optimal Transport Geometry of Natural Spectral Regime Transitions.</a> Zenodo preprint, 2026.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">Technical background</h2>
+        <dl class="skills">
+          <dt>Formal methods</dt><dd>Lean 4, PVS, CBMC; refinement, invariants, probabilistic algorithms, proof replay and axiom audits. Earlier experience with Coq, Z3, Frama-C, JML and VHDL.</dd>
+          <dt>Software and AI</dt><dd>Python, C, C#, Bash; LLM orchestration, structured outputs, workflow compilation, pytest and Hypothesis.</dd>
+          <dt>Platforms</dt><dd>AWS, Databricks/Spark, Delta Lake, PostgreSQL, Redis, OpenSearch, Docker, Terraform and CI/CD.</dd>
+        </dl>
+      </section>
+
+      <section id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education and availability</h2>
+        <p><strong>MSc, Electrical Engineering</strong>, Faculty of Electrical Engineering, University of Belgrade, 1994.</p>
+        <p>Available for remote work, B2B through Trustworthy Systems d.o.o., or EOR. Central European time, with working-hours overlap with US East Coast teams.</p>
+      </section>
+    </main>
+
+    <footer><span>Updated October 2026</span><a href="assets/Dragan-Stosic-CV.pdf">CV (PDF)</a><a href="mailto:dragan.stosic@gmail.com">Contact</a></footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gajaka.github.io/sitemap.xml
